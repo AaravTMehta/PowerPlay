@@ -14,7 +14,7 @@ import org.firstinspires.ftc.teamcode.drive.SampleMecanumDrive;
 import java.util.*;
 
 @TeleOp(name = "PowerPlay First Bot", group = "TestBot")
-public class FirstBot extends LinearOpMode {
+public class FirstBot extends LinearOpMode { //Defining class Aarav Mehta
     SampleMecanumDrive drive;
 
     DcMotor liftL = null;
@@ -51,7 +51,7 @@ public class FirstBot extends LinearOpMode {
         liftR = Constants.liftR;
         liftT = Constants.liftT;
 
-        clawL = Constants.clawL;
+        clawL = Constants.clawL; //Claw
         clawR = Constants.clawR;
 
         extend = Constants.extend;
@@ -80,6 +80,7 @@ public class FirstBot extends LinearOpMode {
         if ((g2.dpad_down || g2.a) && Math.abs(liftR.getCurrentPosition()) >= Constants.liftError) {
             Constants.setLift(0, Constants.liftPower);
         }
+        //Press D to make it hold Aarav Mehta
         if (g2.dpad_left || Math.abs(g2.left_stick_x) > 0.2){
             if (!isHolding){
                 isHolding = true;
